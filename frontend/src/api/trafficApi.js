@@ -1,17 +1,17 @@
 import API from './axios'
 
 export const getLiveTraffic = (id) => {
-  return API.get(`api/traffic/live/${id}`)
+  return API.get(`traffic/live/${id}`)
 }
 
 export const getTrafficHistory = (id) => {
-  return API.get(`api/traffic/history/${id}`)
+  return API.get(`traffic/history/${id}`)
 }
 
 export const uploadTrafficVideo = (formData) => {
-  return API.post('api/traffic/upload', formData)
+  return API.post('traffic/upload', formData)
 }
 
 export const saveTrafficData = (data) => {
-  return API.post('api/traffic/data', data)
+  return API.post('traffic/data', data)
 }

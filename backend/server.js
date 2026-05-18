@@ -12,6 +12,9 @@ import connectDB from "./src/db/index.js";
 
 import { app } from "./src/app.js";
 
+//added by @ankush_13
+import dns from 'dns';
+dns.setDefaultResultOrder('ipv4first');
 
 // connect DB
 connectDB();
